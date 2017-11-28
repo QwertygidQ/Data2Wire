@@ -92,7 +92,6 @@ def encoding_2B1Q(data):
     formatted_data = []
 
     for pair in zip(data[0::2], data[1::2]):
-        print(pair)
         if pair == (0, 0):
             formatted_data.append(0)
         elif pair == (0, 1):
