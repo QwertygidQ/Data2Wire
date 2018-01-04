@@ -5,7 +5,7 @@ import matplotlib.ticker as ticker
 def setup_plot():
     plt.margins(0.01)
     plt.gca().xaxis.grid(True, linestyle='dashed')
-    plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(1))  # makes interval between ticks 1
+    plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(1))  # makes interval between ticks equal to 1
     plt.gca().set_xticklabels([])
     plt.xlabel('Time')
     plt.ylabel('Voltage')
@@ -92,7 +92,6 @@ def encoding_2B1Q(data):
     formatted_data = []
 
     for pair in zip(data[0::2], data[1::2]):
-        print(pair)
         if pair == (0, 0):
             formatted_data.append(0)
         elif pair == (0, 1):
