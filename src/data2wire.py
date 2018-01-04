@@ -1,4 +1,4 @@
-from src import encoding_algorithms
+import encoding_algorithms
 import matplotlib.pyplot as plt
 
 enc_NRZ, enc_NRZI, enc_manch, enc_diff_manch, enc_MLT3, enc_2B1Q = \
